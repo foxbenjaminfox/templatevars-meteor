@@ -10,7 +10,7 @@ Template.myTemplate.onCreated(function () {
 });
 
 Template.myTemplate.events({
-  "click #myelement": function(event, instance) {
+  'click #myelement': function(event, instance) {
     Meteor.call('myMethod', function(err) {
       if (err) {
         instance.errorMessage.set(err.message);
@@ -23,7 +23,7 @@ Template.myTemplate.events({
 With this package, you'd write something like this:
 ````javascript
 Template.myTemplate.events({
-  "click #myelement": function (event, instance) {
+  'click #myelement': function (event, instance) {
     Meteor.call('myMethod', function (err) {
       instance.errorMessage = err.message;
     }
