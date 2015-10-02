@@ -1,4 +1,4 @@
-# Template Vars
+# Template-Scoped Reactive Variables
 
 This package gives each template instance a `vars` attribute, on which all attributes are automaticlly reactive.
 
