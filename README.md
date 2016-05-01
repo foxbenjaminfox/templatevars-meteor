@@ -25,7 +25,7 @@ With this package, you'd write something like this:
 Template.myTemplate.events({
   'click #myelement': function (event, instance) {
     Meteor.call('myMethod', function (err) {
-      instance.errorMessage = err.message;
+      instance.vars.errorMessage = err.message;
     }
   }
 });
