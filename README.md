@@ -33,4 +33,8 @@ Template.myTemplate.events({
 
 Not only do you avoid useless boilerplate in an `onCreated` handler, but you also get to use native assignment syntax rather than getters and setters while still keeping full reactivity.
 
-This package depends on the ES2015 Proxy feature, which so far only Firefox has implemented. If you need to support other browsers (and let's face it, you probably do), wait a few months until the various browsers get around to implementing more ES2015 features. Sadly, Proxies are a feature that can't be transpiled or polyfilled, so for now, it's best to think of this as an experimenial package to show off how awesome ES2015 is, rather than something to be used in production.
+This package depends on the ES2015 Proxy feature, which is supported only in modern versions of Firefox, Chrome, and Edge. It has no support for any version of IE, nor in Safari or Opera.
+
+Sadly, Proxies are a feature that can't be transpiled or polyfilled, so you probably shouldn't use this in production yet. But the march of progress continues, and before to long it won't be unreasonable to ditch support for IE completely. Maybe. Probably not for a while.
+
+So consider this package more of an experiment than anything, at least for now.

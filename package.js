@@ -1,6 +1,6 @@
 Package.describe({
   name: 'xyz:templatevars',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'Attach reactive variables to your templates without all the boilerplate',
   git: 'https://github.com/foxbenjaminfox/templatevars-meteor',
   documentation: 'README.md'
